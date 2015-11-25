@@ -18,7 +18,7 @@ int main()
          cascade = (CvHaarClassifierCascade*)cvLoad(cascade_name, 0, 0, 0); 
          storage = cvCreateMemStorage(0); 
 
-		 IplImage *image = cvLoadImage("02.jpg");//读入图像，按实际输入 
+		 IplImage *image = cvLoadImage("00.jpg");//读入图像，按实际输入 
 
 		  CvSeq* faces = cvHaarDetectObjects(image, cascade, storage, add, 2,CV_HAAR_DO_CANNY_PRUNING, cvSize(0,0));//Haar人脸检测
 		  int num_of_face = faces->total;
